@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         SOL-DirectPDF
 // @namespace    https://github.com/yi7242/SOL-DirectPDF/
-// @version      0.1
+// @version      0.2
 // @description  Open PDF viewer directly without downloading the PDF file.
 // @author       yi
 // @match        https://sol.sfc.keio.ac.jp/*
@@ -13,6 +13,6 @@
     'use strict';
     let c = document.getElementById("file_content");
     if (c != undefined) {
-        location.href = (document.getElementById("file_content").src);
+        location.href = (c.src);
     }
 })();
