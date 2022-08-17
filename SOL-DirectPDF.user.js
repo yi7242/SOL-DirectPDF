@@ -12,7 +12,7 @@
 (function() {
     'use strict';
     let c = document.getElementById("file_content");
-    if (c != undefined) {
+    if (typeof c !== undefined) {
         location.href = c.src;
     }
 })();
