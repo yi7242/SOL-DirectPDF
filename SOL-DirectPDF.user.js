@@ -13,7 +13,7 @@
 (function() {
     'use strict';
     let c = document.getElementById("file_content");
-    let c = document.getElementById("plugin");
+    c = document.getElementById("plugin");
     if (typeof c !== undefined) {
         location.href = c.src;
     }
